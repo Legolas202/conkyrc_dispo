@@ -1,0 +1,80 @@
+use_xft yes
+own_window yes
+own_window_type desktop
+own_window_transparent yes
+update_interval 1
+double_buffer yes
+alignment top_left
+default_color 2c8ad7
+draw_borders no
+xftfont Noto:size=11
+maximal_width 150
+minimum_size 50
+color2 11446f 
+xftalpha 0.5
+gap_x 10
+gap_y 35
+
+TEXT
+${image /home/legolas20/Bureau/REMY/ca.png -p 10,16 -s 120x142}
+${image /home/legolas20/Images/u_h_r.png -p 13,20 -s 110x130}
+
+
+
+
+
+
+
+
+${voffset -3}${color FFFFFF}System Informations
+${voffset -10}${hr 1}
+${color2}User:${color} $nodename
+${color2}System:${color} $sysname $kernel $machine
+${color2}Version:${color}${pre_exec cat /etc/issue.net}  $machine
+${color2}Desktop:${color} $desktop_name ($desktop/$desktop_number)
+ 
+${color2}Uptime:${color} $uptime
+${color2}Battery Autonomy:${color}$battery_time
+${color2}Temperature:${color} $acpitemp°C
+
+${voffset -3}${color FFFFFF}IP
+${voffset -10}${hr 1}
+${color2}Public IP Adress:${color} ${texeci 3600 wget http://checkip.dyndns.org -O - -o /dev/null | cut -d : -f 2 | cut -d \< -f 1}
+${color2}IP Adress:${color} ${addr wlp3s0}
+
+${voffset -3}${color FFFFFF}Process
+${voffset -10}${hr 1}
+${color2}Process : ${color}$processes ${color2}                  Running${color} : $running_processes
+ 
+${voffset -3}${color FFFFFF}Top${alignr}RAM     ${alignr}CPU      ${alignr}PID
+${voffset -10}${hr 1} 
+${color}${top name 1} ${color FFFFFF}${alignr}${top mem 1}  ${color FFFFFF}${alignr}${top cpu 1}  ${color FFFFFF}${alignr}${top pid 1}
+${color}${top name 2} ${color FFFFFF}${alignr}${top mem 2}  ${color FFFFFF}${alignr}${top cpu 2}  ${color FFFFFF}${alignr}${top pid 2}
+${color}${top name 3} ${color FFFFFF}${alignr}${top mem 3}  ${color FFFFFF}${alignr}${top cpu 3}  ${color FFFFFF}${alignr}${top pid 3}
+${color}${top name 1} ${color FFFFFF}${alignr}${top mem 4}  ${color FFFFFF}${alignr}${top cpu 4}  ${color FFFFFF}${alignr}${top pid 4}
+${color}${top name 5} ${color FFFFFF}${alignr}${top mem 5}  ${color FFFFFF}${alignr}${top cpu 5}  ${color FFFFFF}${alignr}${top pid 5}
+
+
+
+
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

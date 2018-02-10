@@ -50,7 +50,7 @@ temperature_unit celsius
 default_color 11446f 
 color2 2c8ad7
 # Lua Load  #
-lua_load ~/.clock/clock_rings.lua
+lua_load /home/legolas20/conky/.clock/clock_rings.lua
 lua_draw_hook_pre clock_rings
 
 TEXT
@@ -58,7 +58,7 @@ ${voffset 8}${color 00558D}${font caviar dreams:size=16}${time %A}${font}${voffs
 ${color FFFFFF}${voffset -30}${color FFFFFF}${font caviar dreams:size=18}${time %b}${font}${voffset -3} ${color FFFFFF}${font caviar dreams:size=20}${time %Y}${font}${color 00558D}${hr}
 ${voffset 140}${offset 42}${font caviar dreams:size=10}${color F00000}${color2}${font URW Chancery L:style=Medium Italic:pixelsize=34}${time %H:%M:%S}${font}${color}${alignr}HOME${font}
 ${font caviar dreams:size=12}${color FFFFFF}${alignr}${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ LQBK temperature temperature 30} °C${font}
-${image ~/.clock/linux_blue.png -p 65,110 -s 70x70}${color FFFFFF}${voffset -3}Memory Informations
+${image /home/legolas20/conky/.clock/linux_blue.png -p 65,110 -s 70x70}${color FFFFFF}${voffset -3}Memory Informations
 ${voffset -10}${hr 1}
 ${voffset 20}${color FFFFFF}${goto 2}${voffset 12}${cpu cpu0}%
 ${color 00558D}${offset -2}${voffset 0}CPU

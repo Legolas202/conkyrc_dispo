@@ -31,7 +31,7 @@ ${offset 183}${voffset -32}$cpu%
 
 ${color3}${voffset -3}TODO List
 ${voffset -10}${hr}
-${color}${execi 3000 cat ~/TODO}
+${color}${execi 3000 cat /home/legolas20/conky/TODO}
 
 
 

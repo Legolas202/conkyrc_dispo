@@ -51,7 +51,7 @@ temperature_unit celsius
 default_color F00000
 
 # Lua Load  #
-lua_load ~/.circle/clock_rings.lua
+lua_load /home/legolas20/conky/.circle/clock_rings.lua
 lua_draw_hook_pre clock_rings
 
 TEXT

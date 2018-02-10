@@ -1,0 +1,38 @@
+use_xft yes
+own_window yes
+own_window_type desktop
+own_window_transparent yes
+update_interval 0.5
+double_buffer yes
+alignment tr
+default_color 2c8ad7
+draw_borders no
+minimum_size 200 200
+xftfont caviar dreams:size=11
+color2 11446f
+color3 FFFFFF
+gap_x 15
+gap_y 394
+
+TEXT
+
+${voffset -3}${color FFFFFF}Upload/Download
+${voffset -10}${hr 1}
+	${color2}Down${color}${offset 55}${totaldown wlp3s0}  ${color2}Up${color} ${offset 50}${totalup wlp3s0}
+       ${downspeedgraph wlp3s0 22,150 2c8ad7 11446f} ${upspeedgraph wlp3s0 22,150 2c8ad7 11446f}
+${offset 60}${voffset -32}${downspeedf wlp3s0}k/s
+${offset 215}${voffset -18}${upspeedf wlp3s0}k/s
+
+${voffset -3}${color FFFFFF}CPU Activity
+${voffset -10}${hr 1}
+
+${color2}CPU: ${color}${cpugraph 0 25,300 2c8ad7 11446f}
+${offset 183}${voffset -32}$cpu%
+
+${color3}${voffset -3}TODO List
+${voffset -10}${hr}
+${color}${execi 3000 cat ~/TODO}
+
+
+
+

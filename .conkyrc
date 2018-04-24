@@ -30,7 +30,7 @@ ${voffset -3}${color FFFFFF}System Informations
 ${voffset -10}${hr 1}
 ${color2}User:${color} $nodename
 ${color2}System:${color} $sysname $kernel $machine
-${color2}Version:${color}${pre_exec cat /etc/issue.net}  $machine
+${color2}Version:${color} ${pre_exec cat /etc/issue.net}  $machine
 ${color2}Desktop:${color} $desktop_name ($desktop/$desktop_number)
  
 ${color2}Uptime:${color} $uptime

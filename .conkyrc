@@ -12,7 +12,7 @@ maximal_width 150
 minimum_size 50
 color2 11446f 
 xftalpha 0.5
-gap_x 10
+gap_x 50
 gap_y 35
 
 TEXT

@@ -26,8 +26,8 @@ border_inner_margin 0
 border_outer_margin 0
 
 alignment tr
-gap_x 450
-gap_y 215
+gap_x 724
+gap_y 370
 
 minimum_size 400 400
 maximum_width 400
